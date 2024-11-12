@@ -30,3 +30,9 @@ def stats() -> str:
 def unauthorized():
     '''testing purposes'''
     abort(401)
+
+
+@app_views.route("/forbidden", methods=["GET"], strict_slashes=False)
+def forbidden():
+    '''hdek tema khawa dialy'''
+    abort(403)
